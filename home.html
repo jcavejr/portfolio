@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/a2ae5ed7fe.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jeffrey Cave | Portfolio</title>
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+
+</head>
+
+<!-- Content -->
+<body>
+<div class="container" id="home; content">
+  <!-- Navigation Bars -->
+  <div class="header clearfix">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation"
+      style="background-color: #DDDDDD">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="collapse-navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <br>
+
+  <!-- Header -->
+  <div id="home" class="jumbotron" style="background-image: url(images/header_bg.jpeg)">
+    <h1 style="text-align: center">Jeffrey Cave</h1>
+    <p style="text-align: center" class="lead">Computer Science Student | Future
+      Software Developer | Aspiring Pilot</p>
+  </div>
+
+  <!-- About Me -->
+  <span class="anchor" id="about"></span>
+  <div class="row">
+    <!-- Profile -->
+    <div class="col-md-2">
+      <img src="images/me.JPG" alt="Headshot" class="img-circle" width="150px"
+      height="150px"></img>
+      <p style="padding-left: 20px">Jeffrey Cave | 20</p>
+      <p><i class="fa fa-github" aria-hidden="true"></i>
+        <a href="http://www.github.com/jcavejr">GitHub</a></p>
+      <p><img src="https://maxcdn.icons8.com/Android_L/PNG/24/Logos/devpost-24.png" title="Dev Post" width="14">
+        <a href="http://www.devpost.com/jcavejr">DevPost</a></p>
+      <p><i class="fa fa-instagram" aria-hidden="true"></i>
+        <a href="http://www.instagram.com/jcavejr">Instagram</a></p>
+    </div>
+
+    <!-- Bio -->
+    <div class="col-md-10">
+      <h2>About Me</h2>
+      <p>Hello. I'm currently a Computer Science major at Rutgers University. I've
+        loved programming since I built my first computer in High School, and am just
+        really excited to get into it as my career!</p>
+      <p>Currently I'm a sophomore (graduating next spring, though) in college,
+        so the only languages
+        I'm really familiar with at the moment are Python, HTML, CSS, Java and C.
+        All of my computers are running some form of Linux (best OS) - Debian on my laptop
+        and desktop, Raspbian on both of my raspberry pi's, and Fedora
+        as a secondary OS on my desktop. As I mentioned earlier, my desktop is custom
+        built. Originally it was built for gaming, but it's turned into a developer
+        system.</p>
+      <p>Another aspect of my life that has been a heavy influence on me is my
+        disability. And no it's not anything mental (I get that question just about
+        everytime I explain this). The disability is called Charcot-Marie Tooth Disease and
+        it basically destroys my feet. I've always been really bad at explaining it,
+        so I'd suggest a quick google search if you want to learn more. But to
+        explain how it affected me, I've had <strong>7 surgeries</strong>(5 on my
+        feet and 2 on my back for scoliosis which happens to come with it :sadface:)
+        throughout high school to prevent losing my ability to walk entirely. Even
+        after all the work I've had done on my feet, they still get worse every day
+        and I have to rely on leg braces just to be able to walk outside of the
+        confines of my home.</p>
+      <p>Now that I've made it through those surgeries, I really just want to do
+        work. Getting through high school with 7 surgeries made me tremendously
+        stronger as a person, and now I'm left with a huge drive to get work done.
+      </p>
+    </div>
+  </div>
+
+  <!-- Combining this into "About Me" section for now -->
+  <!-- Education
+  <div id="education">
+    <h2>Education</h2>
+  </div> -->
+
+  <!-- Projects -->
+  <span class="anchor" id="projects"></span>
+  <div class="row">
+    <h2>Projects</h2>
+
+      <!-- PyRatNews -->
+      <div id="pyratnews" class="row">
+        <h3 style="text-align: left; padding-left: 1.5%"><a
+          href="https://devpost.com/software/pyrat-news" target="_blank">PyRatNews
+          </a></h3>
+      </div> <!-- Title Ending -->
+      <div class="row">
+        <!-- Image -->
+        <div class="col-md-4">
+          <img src="images/pyratnews.png" alt="Screenshot of code used in project"
+            width="100%"></img>
+        </div> <!-- Image Ending -->
+        <!-- Description -->
+        <div class="col-md-8">
+          <p>PyRatNews is intended to be an application that checks a given article
+            for credibility. It checks the domain name, how many citations are given
+            in the article, and track record of the author and publisher.</p>
+          <p>This was by far the most enjoyable project I've worked on thus far.
+            The project was created at Philly Codefest 2017 with myself and 3 other
+            students, 2 of whom I've never met before. I personally worked on the
+            web scraping - getting the domain name, finding the author and finding
+            any citations in the article. The final product unfortunately doesn't work
+            at the moment, but it was a pleasure to work on and I'm looking forward
+            to my next hackathon!</p>
+          <p>My contributions to this project were written in Python 3 using the
+            <a href="https://pypi.python.org/pypi/beautifulsoup4">Beautiful Soup 4</a>
+            and <a href="https://pypi.python.org/pypi/newspaper">Newspaper</a> libraries.</p>
+        </div> <!-- Description Ending -->
+      </div> <!-- PyRatNews Ending -->
+
+      <!-- Discord Bot -->
+      <div id="discordbot" class="row">
+        <h3 style="text-align: left; padding-left: 1.5%"><a
+          href="https://github.com/jcavejr/perpdiscordbot" target="_blank">
+          Discord Bot</a></h3>
+      </div> <!-- Close Row Div (Title Section) -->
+      <div class="row">
+        <!-- Description -->
+        <div class="col-md-8">
+          <p>This bot manages the roles on a Discord Server. For those who don't
+            know, Discord is an app that allows people from all over the world to
+            talk with eachother either through voice or text chats. This bot scans
+            the text channels on a discord server for certain messages, and acts
+            on those messages accordingly. For instance, the '!member' command gives
+            the message sender the 'member' role on the server they sent the message
+            in, if they meet certain criteria.</p>
+          <p>I actually learned a ton from the creation of this bot, it's really
+            the first project I've worked on where I dove deep into api documentation,
+            so I attribute my doc-reading skills to this project alone. Not only
+            did I have to learn how to read the docs, but I also had my first
+            exposure to coroutines.</p>
+          <p>This project was made in Python 3 using the <a href='https://github.com/Rapptz/discord.py'>
+            Discord.py API</a> and the <a href='https://github.com/meraki-analytics/cassiopeia'>
+            Cassiopeia Riot Games API</a>.</p>
+        </div>
+        <!-- Image -->
+        <div class="col-md-4">
+          <img src="images/discordbot.png" alt="Screenshot of code used in project"
+            width="100%"></img>
+        </div> <!-- Close Column Div (Image Section) -->
+      </div> <!-- Close Row Div (Discord Bot Section) -->
+
+      <!-- Pong -->
+      <div id="pong" class="row">
+        <h3 style="text-align: left; padding-left: 1.5%"><a
+          href="https://github.com/jcavejr/pypong" target="_blank">Pong</a></h3>
+      </div>
+      <div class="row">
+        <!-- Image -->
+        <div class="col-md-4">
+          <img src="images/pong.png" alt="Screenshot of custom made Pong game"
+            width="100%"></img>
+        </div> <!-- Close Column Div (Image Section) -->
+        <!-- Description -->
+        <div class="col-md-8">
+
+          <p>I imagine you know what Pong is, but in case you don't, here's a
+            brief explanation:</p>
+          <p>Pong is a simple game where 2 players take control of a paddle and
+            have the goal of scoring a ball into the opposing players goal. The
+            winner is whoever has the most points at the end of the game.</p>
+          <p>This was essentially my first <em>big</em> project. It's the first
+            project I made that surpassed 100 lines <em>*claps*</em>. Being my first
+            "big" project, this was definitely the project that I learned the most
+            from. Unfortunately I made this project before I understood object
+            oriented programming and at a point where I was unaware that I could
+            just draw rectangles on the screen, so it definitely isn't the best
+            work I've ever done. But it was my first project and I'll be revisiting it
+            soon.</p>
+          <p>This was written in Python 3 using the <a href='https://www.pygame.org/news'>
+          PyGame</a> library.</p>
+        </div> <!-- Close Column Div (Description Section) -->
+      </div> <!-- Close Row Div (Pong Section) -->
+
+  </div> <!-- Close Row Div  (Projects Section) -->
+
+  <!-- Contact Me -->
+  <span class="anchor" id="contact"></span>
+  <div class="row">
+    <h2>Contact Me</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h4>Contact Information</h4>
+      <p><strong>Phone Number: </strong>(856) - 425 - 3429</p>
+      <p><strong>Email Address: </strong><a href="mailto:jcavejr@gmail.com">
+        jcavejr@gmail.com</a></p>
+      <p><strong>Location: </strong>Cherry Hill, New Jersey, 08002</p>
+    </div>
+    <div class="col-md-6">
+      <h4>Social Media Links</h4>
+      <p><i class="fa fa-github" aria-hidden="true"></i>
+        <a href="http://www.github.com/jcavejr">GitHub</a></p>
+      <p><img src="https://maxcdn.icons8.com/Android_L/PNG/24/Logos/devpost-24.png" title="Dev Post" width="14">
+        <a href="http://www.devpost.com/jcavejr">DevPost</a></p>
+      <p><i class="fa fa-instagram" aria-hidden="true"></i>
+        <a href="http://www.instagram.com/jcavejr">Instagram</a></p>
+    </div>
+  </div> <!-- Close Row Div (Contact Section) -->
+
+</div>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <span class="text-muted">Ⓒ 2017 Jeffrey Cave | "Future influencer
+     in the field of programming and software development" | (856)-425-3429 | </span>
+    <span class="text-muted"><a href="#contact">Contact Me</a></span>
+  </div>
+</footer>
+</body>
+
+</html>
